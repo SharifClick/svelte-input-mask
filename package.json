@@ -5,5 +5,15 @@
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "description": "A Svelte component for masking input",
-  
+  "homepage": "https://github.com/SharifClick/svelte-input-mask",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SharifClick/svelte-input-mask"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/SharifClick/svelte-input-mask/issues"
+  }
 }
