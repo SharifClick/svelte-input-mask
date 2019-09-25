@@ -1,0 +1,9 @@
+{
+  "name": "svelte-input-mask",
+  "version": "0.0.1",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "description": "A Svelte component for masking input",
+  
+}
