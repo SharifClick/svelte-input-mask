@@ -33,5 +33,21 @@
     "rollup-plugin-terser": "^4.0.4",
     "svelte": "^3.0.0",
     "sirv-cli": "^0.4.4"
-  }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c rollup.dev.config.js -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv docs --single",
+    "start:dev": "sirv docs --single --dev"
+  },
+  "keywords": [
+    "svelte",
+    "svelte.js",
+    "sveltejs",
+    "svelte-input-mask",
+    "mask",
+    "masked-input",
+    "input-mask"
+  ]
 }
