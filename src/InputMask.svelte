@@ -10,6 +10,20 @@
   export let placeholder = '' ;
   export let classes = '';
 
+  let inputElement;
+  let value;
+
+
+  onMount(() => {
+      let textMaskConfig = {
+        inputElement,
+        mask,
+        showMask,
+        guide,
+        keepCharPositions
+      }
+  });
+
 </script>
 
 <div>
