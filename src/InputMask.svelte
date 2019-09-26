@@ -144,6 +144,31 @@
   }
 }
 
+function safeSetSelection(element, selectionPosition) {
+  if (document.activeElement === element) {
+    if (isAndroid) {
+      defer(() => element.setSelectionRange(selectionPosition, selectionPosition, strNone), 0)
+    } else {
+      element.setSelectionRange(selectionPosition, selectionPosition, strNone)
+    }
+  }
+}
+
+function getSafeRawValue(inputValue) {
+  if (isString(inputValue)) {
+    return inputValue
+  } else if (isNumber(inputValue)) {
+    return String(inputValue)
+  } else if (inputValue === undefined || inputValue === null) {
+    return emptyString
+  } else {
+    throw new Error(
+      "The 'value' provided to Text Mask needs to be a string or a number. The value " +
+      `received was:\n\n ${JSON.stringify(inputValue)}`
+    )
+  }
+}
+
 
 
 
