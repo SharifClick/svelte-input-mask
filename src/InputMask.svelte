@@ -9,3 +9,7 @@
   export let classes = '';
 
 </script>
+
+<div>
+  <input class="{classes}" type='text' {placeholder} bind:value bind:this={inputElement}>
+</div>
