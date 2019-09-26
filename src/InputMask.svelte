@@ -1,5 +1,7 @@
 <script>
 
+  import { onMount } from 'svelte';
+
   export let mask =  [];
   export let showMask = false;
   export let guide = true;
