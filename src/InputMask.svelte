@@ -14,6 +14,13 @@
   let value;
 
 
+  const emptyString = '';
+  const strNone = 'none';
+  const strObject = 'object';
+  const isAndroid = typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent);
+  const defer = typeof requestAnimationFrame !== 'undefined' ? requestAnimationFrame : setTimeout;
+
+
   onMount(() => {
       let textMaskConfig = {
         inputElement,
