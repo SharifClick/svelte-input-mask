@@ -1,1 +1,1 @@
-src/* linguist-vendored
+*.svelte linguist-vendored
